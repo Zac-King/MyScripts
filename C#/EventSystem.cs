@@ -189,7 +189,24 @@ public static class EventSystem
     
 }
 
-// // Implementation :
+// Implementation ////////////////
 /*
+    // Example: //
+
+    //   
+    AddSubscriber(Combat, "Hit", myDelegate);
+    // Templated AddSubscriber 
+    AddSubscriber(Combat, "Hit", myDelegate);       // myDelegate equals a delegete with templated parameters
+
+    // 
+    Notify(Combat, "Hit");
+    // Templated Notify
+    Notify(combat, "Hit", 15);                      // "15" being arg1 in example, is the templated parameter that is passed with the delegate
+
+    // 
+    RemoveSubscriber(Combat, "Hit", myDelegate);
+    // Templated RemoveSubscriber
+    RemoveSubscriber(Combat, "Hit", myDelegate);    // myDelegate equals a delegete with templated parameters
 
 */
+//////////////////////////////////
